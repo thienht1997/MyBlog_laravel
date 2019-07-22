@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/','Blogcontroller@index')->name('index');
-Route::get('/post','Blogcontroller@show_post')->name('show_post');
-Route::get('/aboutme','Blogcontroller@show_info')->name('about_me');
+Route::get('/','BlogController@index')->name('index');
+Route::get('/post','BlogController@show_post')->name('show_post');
+Route::get('/aboutme','BlogController@show_info')->name('about_me');
 
 
 Route::get('/contact', function () {
