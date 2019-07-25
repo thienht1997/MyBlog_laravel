@@ -12,7 +12,7 @@ About me
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content text-center">
-                        <h2>about us</h2>
+                        <h2>about me</h2>
                     </div>
                 </div>
             </div>
@@ -32,8 +32,8 @@ About me
                             <div class="line"></div>
                             <a href="#" class="post-tag">Lifestyle</a>
                             <h4><a href="#" class="post-headline">Welcome to My blog</a></h4>
-                            <p class="mb-3">Chào mọi người, mình tên là Hồ Thanh. 
-                                    Mình lập website này ra có 2 mục đích là chia sẻ và lưu lại những thứ mình thấy hay ho đối với mình vậy nên mọi người hãy đóng góp ý kiến giúp mình về những thứ mình chia sẻ cũng như có gì hay muốn mình chia sẻ cứ bình luận bên dưới hay gửi contact cho mình ở mục Contact Us. 
+                            <p class="mb-3">Chào mọi người, mình tên là Hồ Thanh Thiên. 
+                                    Mình lập website này ra có 2 mục đích là chia sẻ và lưu lại những thứ mình thấy hay ho đối với mình vậy nên mọi người hãy đóng góp ý kiến giúp mình về những thứ mình chia sẻ cũng như có gì hay muốn mình chia sẻ cứ bình luận bên dưới hay gửi contact cho mình ở mục Contact Me. 
                                     
                                     À mình quên nói với các bạn mình là một lập trình viên PHP, kinh nghiệm cũng còn ít thôi nhưng cũng muốn chia sẻ tiện được các tiền bối vào chém cho biết thêm vài cái mới. Nên nếu có gì mình sai thì mong các bạn góp ý cho mình sửa nhé. 
                                     
@@ -68,7 +68,7 @@ About me
                         <div class="single-blog-content">
                             <div class="line"></div>
                             <a href="#" class="post-tag">Lifestyle</a>
-                            <h4><a href="#" class="post-headline">Welcome to this Lifestyle blog</a></h4>
+                            <h4><a href="#" class="post-headline">Welcome to my blog</a></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum. Donec sagittis lacus sit amet augue sodales, vel cursus enim tristique. Maecenas vitae massa ut est consectetur sagittis quis vitae tortor. Sed et massa vel.</p>
                         </div>
                     </div>

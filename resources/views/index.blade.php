@@ -22,9 +22,9 @@ Home
                         <div class="col-12">
                             <div class="slide-content text-center">
                                 <div class="post-tag">
-                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                    <a href="#" data-animation="fadeInUp">myblog</a>
                                 </div>
-                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Welcome to my blog!!</a></h2>
                             </div>
                         </div>
                     </div>
@@ -37,9 +37,9 @@ Home
                         <div class="col-12">
                             <div class="slide-content text-center">
                                 <div class="post-tag">
-                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                    <a href="#" data-animation="fadeInUp">myblog</a>
                                 </div>
-                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Welcome to my blog!!</a></h2>
                             </div>
                         </div>
                     </div>
@@ -52,9 +52,9 @@ Home
                         <div class="col-12">
                             <div class="slide-content text-center">
                                 <div class="post-tag">
-                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                    <a href="#" data-animation="fadeInUp">myblog</a>
                                 </div>
-                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Welcome to my blog!!</a></h2>
                             </div>
                         </div>
                     </div>
@@ -74,8 +74,8 @@ Home
                         <!-- Blog Content -->
                         <div class="single-blog-content">
                             <div class="line"></div>
-                            <a href="#" class="post-tag">Lifestyle</a>
-                            <h4><a href="#" class="post-headline">Welcome to this Lifestyle blog</a></h4>
+                            <a href="#" class="post-tag">myblog</a>
+                            <h4><a href="#" class="post-headline">Welcome to my blog</a></h4>
                             <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. Morbi sodales, dolor id ultricies dictum</p>
                             <a href="#" class="btn original-btn">Read More</a>
                         </div>
@@ -87,7 +87,7 @@ Home
                         <img src="img/blog-img/1.jpg" alt="">
                         <!-- Catagory Title -->
                         <div class="catagory-title">
-                            <a href="#">Lifestyle posts</a>
+                            <a href="#">myblog posts</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ Home
                                 <!-- Blog Content -->
                                 <div class="single-blog-content">
                                     <div class="line"></div>
-                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <a href="#" class="post-tag">myblog</a>
                                     <h4><a href="#" class="post-headline">Party people in the house</a></h4>
                                     <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
                                     <div class="post-meta">
@@ -150,7 +150,7 @@ Home
                                 <!-- Blog Content -->
                                 <div class="single-blog-content">
                                     <div class="line"></div>
-                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <a href="#" class="post-tag">myblog</a>
                                     <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
                                     <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
                                     <div class="post-meta">
@@ -177,7 +177,7 @@ Home
                                 <!-- Blog Content -->
                                 <div class="single-blog-content mt-50">
                                     <div class="line"></div>
-                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <a href="#" class="post-tag">myblog</a>
                                     <h4><a href="#" class="post-headline">10 Tips to organize the perfect party</a></h4>
                                     <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
                                     <div class="post-meta">
@@ -204,7 +204,7 @@ Home
                                 <!-- Blog Content -->
                                 <div class="single-blog-content">
                                     <div class="line"></div>
-                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <a href="#" class="post-tag">myblog</a>
                                     <h4><a href="#" class="post-headline">Party people in the house</a></h4>
                                     <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
                                     <div class="post-meta">
@@ -231,7 +231,7 @@ Home
                                 <!-- Blog Content -->
                                 <div class="single-blog-content">
                                     <div class="line"></div>
-                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <a href="#" class="post-tag">myblog</a>
                                     <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
                                     <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
                                     <div class="post-meta">

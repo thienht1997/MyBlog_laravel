@@ -76,7 +76,7 @@
                         <div class="classynav">
                             <ul>
                             <li><a href="{{route('about_me')}}">About Me</a></li>
-                                <li><a href="index.html">Home</a></li>
+                                {{-- <li><a href="index.html">Home</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="index.html">Home</a></li>
@@ -85,7 +85,7 @@
                                         <li><a href="contact.html">Contact</a></li>
                                         <li><a href="coming-soon.html">Coming Soon</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 
                                 <li><a href="#">Category</a>
                                     <ul class="dropdown">
@@ -113,7 +113,7 @@
                                     </ul>
                                 </li>
                               
-                                <li><a href="#">Megamenu</a>
+                                {{-- <li><a href="#">Megamenu</a>
                                     <div class="megamenu">
                                         <ul class="single-mega cn-col-4">
                                             <li class="title">Headline 1</li>
@@ -148,7 +148,7 @@
                                             <li><a href="#">Mega Menu Item 5</a></li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> --}}
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
 
