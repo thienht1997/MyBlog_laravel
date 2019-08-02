@@ -60,8 +60,7 @@ Home
                                     <h4><a href="#" class="post-headline">{{$post->name}}</a></h4>
                                     <p>{{$post->content}}.</p>
                                     <div class="post-meta">
-                                        <p>By <a href="#">james smith</a></p>
-                                        <p>3 comments</p>
+                                        
                                     </div>
                                 </div>
                             </div>
