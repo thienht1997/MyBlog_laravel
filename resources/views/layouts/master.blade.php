@@ -22,7 +22,7 @@
 
 <body>
     @include('components.header')
-    <!-- Preloader -->
+ 
     @include('components.subscribe_modal')
     @yield('content')
     @include('components.instagram_slide')

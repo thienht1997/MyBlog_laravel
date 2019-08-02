@@ -1,3 +1,4 @@
+
 <header class="header-area">
 
     <!-- Top Header Area -->
@@ -25,9 +26,9 @@
                 <!-- Top Social Area -->
                 <div class="col-12 col-sm-4">
                     <div class="top-social-area">
-                        <a href="{{route('index')}}" data-toggle="tooltip" data-placement="bottom" title="My Gmail"><h7> thienht1997tt@gmail.com </h7></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqrnlQxxzBLPHnsBGhMLMHBCWzWxfBCTSVrfjBPQTlsJFPHNbHwTnpTDjgsgZJSssxwCL" data-toggle="tooltip" data-placement="bottom"><h7> thienht1997tt@gmail.com </h7></a>
                         <a href="{{route('index')}}" data-toggle="tooltip" data-placement="bottom" title="My phone"><i class="fa fa-phone" aria-hidden="true"></i> 0356630128 </a>
-                        <a href="https://github.com/thienht1997" data-toggle="tooltip" data-placement="bottom" title="My github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/thienht1997" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-github" aria-hidden="true"></i></a>
                     
                         
                                       
@@ -75,6 +76,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
+                            <li><a href="{{route('index')}}">Home</a></li>
                             <li><a href="{{route('about_me')}}">About Me</a></li>
                                 {{-- <li><a href="index.html">Home</a></li>
                                 <li><a href="#">Pages</a>
@@ -87,31 +89,7 @@
                                     </ul>
                                 </li> --}}
                                 
-                                <li><a href="#">Category</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Category 1</a></li>
-                                        <li><a href="#">Category 1</a></li>
-                                        <li><a href="#">Category 1</a>
-                                            <ul class="dropdown">
-                                                <li><a href="#">Category 2</a></li>
-                                                <li><a href="#">Category 2</a></li>
-                                                <li><a href="#">Category 2</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="#">Category 3</a></li>
-                                                        <li><a href="#">Category 3</a></li>
-                                                        <li><a href="#">Category 3</a></li>
-                                                        <li><a href="#">Category 3</a></li>
-                                                        <li><a href="#">Category 3</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Category 2</a></li>
-                                                <li><a href="#">Category 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Category 1</a></li>
-                                        <li><a href="#">Category 1</a></li>
-                                    </ul>
-                                </li>
+                              
                               
                                 {{-- <li><a href="#">Megamenu</a>
                                     <div class="megamenu">
@@ -122,7 +100,7 @@
                                             <li><a href="#">Mega Menu Item 3</a></li>
                                             <li><a href="#">Mega Menu Item 4</a></li>
                                             <li><a href="#">Mega Menu Item 5</a></li>
-                                        </ul>
+                                        </ul> 
                                         <ul class="single-mega cn-col-4">
                                             <li class="title">Headline 2</li>
                                             <li><a href="#">Mega Menu Item 1</a></li>
@@ -149,7 +127,8 @@
                                         </ul>
                                     </div>
                                 </li> --}}
-                                <li><a href="contact.html">Contact</a></li>
+                                
+                            
                             </ul>
 
                             <!-- Search Form  -->

@@ -20,13 +20,6 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="preload-content">
-            <div id="original-load"></div>
-        </div>
-    </div>
-
     <div class="coming-soon-area bg-img background-overlay" style="background-image: url(img/bg-img/b9.jpg);">
         <!-- ##### Header Area Start ##### -->
         <header class="header-area">
