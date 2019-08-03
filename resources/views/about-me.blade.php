@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-About me
+Về tôi ...
 @endsection
 @section('content')
 
