@@ -30,7 +30,7 @@ About me
                         <!-- Blog Content -->
                         <div class="single-blog-content">
                             <div class="line"></div>
-                            <a href="#" class="post-tag">Lifestyle</a>
+                            <a href="#" class="post-tag">Blog tào lao</a>
                             <h4><a href="#" class="post-headline">Welcome to My blog</a></h4>
                             <p class="mb-3">Chào mọi người, mình tên là Hồ Thanh Thiên. 
                                     Mình lập website này ra có 2 mục đích là chia sẻ và lưu lại những thứ mình thấy hay ho đối với mình vậy nên mọi người hãy đóng góp ý kiến giúp mình về những thứ mình chia sẻ cũng như có gì hay muốn mình chia sẻ cứ bình luận bên dưới hay gửi contact cho mình ở mục Contact Me. 
@@ -49,7 +49,7 @@ About me
                         <img src="img/blog-img/1.jpg" alt="">
                         <!-- Catagory Title -->
                         <div class="catagory-title">
-                            <a href="#">Lifestyle posts</a>
+                            <a href="#">Tào lao post</a>
                         </div>
                     </div>
                 </div> --}}
