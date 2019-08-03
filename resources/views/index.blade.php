@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-Home
+Blog tào lao 
 @endsection
 @section('content')
 
