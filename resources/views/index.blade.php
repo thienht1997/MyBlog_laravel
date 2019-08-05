@@ -23,7 +23,7 @@ Blog tào lao
                             <div class="line"></div>
                             <a href="#" class="post-tag">blog tào lao</a>
                             <h4><a href="#" class="post-headline">Hihihihihi</a></h4>
-                            <p>Blog đang trong quá trình xây dựng, chủ yếu do mình lười nên chắc còn lâu mới xog..BlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablabla:d</p>
+                            <p>Blog đang trong quá trình xây dựng, chủ yếu do mình lười nên chắc còn lâu mới xog..BlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablabla :D</p>
                             <a href="#" class="btn original-btn">Read More</a>
                         </div>
                     </div>
