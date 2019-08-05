@@ -23,7 +23,7 @@ Blog tào lao
                             <div class="line"></div>
                             <a href="#" class="post-tag">blog tào lao</a>
                             <h4><a href="#" class="post-headline">Hihihihihi</a></h4>
-                            <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. Morbi sodales, dolor id ultricies dictum</p>
+                            <p>Blog đang trong quá trình xây dựng, chủ yếu do mình lười nên chắc còn lâu mới xog..BlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablablaBlablablablablablablabla:d</p>
                             <a href="#" class="btn original-btn">Read More</a>
                         </div>
                     </div>
