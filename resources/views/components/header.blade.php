@@ -26,7 +26,7 @@
                 <!-- Top Social Area -->
                 <div class="col-12 col-sm-4">
                     <div class="top-social-area">
-                        <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqrnlQxxzBLPHnsBGhMLMHBCWzWxfBCTSVrfjBPQTlsJFPHNbHwTnpTDjgsgZJSssxwCL" data-toggle="tooltip" data-placement="bottom"><h7> thienht1997tt@gmail.com </h7></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=thienht1997tt@gmail.com" data-toggle="tooltip" data-placement="bottom"><h7> thienht1997tt@gmail.com </h7></a>
                         <a href="{{route('index')}}" data-toggle="tooltip" data-placement="bottom" title="My phone"><i class="fa fa-phone" aria-hidden="true"></i> 0356630128 </a>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/thienht1997" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-github" aria-hidden="true"></i></a>
                     
