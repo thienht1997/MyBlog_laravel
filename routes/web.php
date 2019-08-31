@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/','BlogController@index')->name('index');
-Route::get('/post','BlogController@show_post')->name('show_post');
-Route::get('/aboutme','BlogController@show_info')->name('about_me');
+Route::get('/', 'BlogController@index')->name('index');
+Route::get('/post', 'BlogController@show_post')->name('show_post');
+Route::get('/aboutme', 'BlogController@show_info')->name('about_me');
+Route::get('/ajaxposts', 'BlogController@ajaxPostData')->name('ajaxposts');
 
 
 Route::get('/contact', function () {

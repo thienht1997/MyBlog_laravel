@@ -1,17 +1,16 @@
 @extends('layouts.master')
 @section('title')
-Blog tào lao 
+Blog tào lao
 @endsection
 @section('content')
 
-   
-
-   
-    <!-- ##### Hero Area Start ##### -->
-     {{-- Bỏ banner ở đây  --}}
-    <!-- ##### Hero Area End ##### -->
-
-    <!-- ##### Blog Wrapper Start ##### -->
+<head>
+    @section('css')
+        <base href="{{asset('blog_layouts')}}/">
+        <link rel="stylesheet" href="{{asset('blog_layouts/style.css')}}">
+    @endsection
+</head>
+  <body>
     <div class="blog-wrapper section-padding-100 clearfix">
         <div class="container">
             <div class="row align-items-end">
@@ -29,7 +28,7 @@ Blog tào lao
                     </div>
                 </div>
                 <!-- Single Blog Area -->
-             
+
             </div>
         </div>
 
@@ -40,13 +39,13 @@ Blog tào lao
 
                     <!-- Single Blog Area  -->
                     @foreach ($posts as $post)
-                        
-                   
+
+
                     <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1000ms">
                         <div class="row align-items-center">
                             <div class="col-12 col-md-6">
                                 <div class="single-blog-thumbnail">
-                                    <img src="img/blog-img/4.jpg" alt="">
+                                    <img src="{{asset('blog_layouts/img/blog-img/4.jpg')}}" alt="">
                                     <div class="post-date">
                                         <a href="#">12 <span>march</span></a>
                                     </div>
@@ -60,7 +59,7 @@ Blog tào lao
                                     <h4><a href="#" class="post-headline">{{$post->name}}</a></h4>
                                     <p>{{$post->content}}.</p>
                                     <div class="post-meta">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -68,20 +67,21 @@ Blog tào lao
                     </div>
 
                     @endforeach
-                
+
                     <!-- Load More -->
                     <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
                         <a href="#" class="btn original-btn">Read More</a>
                     </div>
                 </div>
 
-        
+
             </div>
         </div>
     </div>
+  </body>
     <!-- ##### Blog Wrapper End ##### -->
 
     <!-- ##### Instagram Feed Area Start ##### -->
-   
+
     @endsection
-   
+

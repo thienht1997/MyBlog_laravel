@@ -2,41 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <base href="{{asset('blog_layouts')}}/">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Title -->
-    <title>@yield('title')</title>
+    <title>Resume - Start Bootstrap Theme</title>
+    <base href="{{asset('navigave_layouts')}}/">
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom fonts for this template -->
+    @yield('css')
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
 
 </head>
 
-<body>
-    @include('components.header')
- 
-    @include('components.subscribe_modal')
-    @yield('content')
-    @include('components.instagram_slide')
-    <!-- ##### Footer Area End ##### -->
-    @include('components.footer')
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
+<body id="page-top">
+@include('components.header')
 
+@include('components.navigave')
+<div class="container-fluid p-0">
+
+    @yield('content');
+
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/resume.min.js"></script>
+<!-- jQuery (Necessary for All JavaScript Plugins) -->
+<script src="{{asset('blog_layouts/js/jquery/jquery-2.2.4.min.js')}}"></script>
+<!-- Popper js -->
+<script src="{{asset('blog_layouts/js/popper.min.js')}}"></script>
+<!-- Bootstrap js -->
+<script src="{{asset('blog_layouts/js/bootstrap.min.js')}}"></script>
+<!-- Plugins js -->
+<script src="{{asset('blog_layouts/js/plugins.js')}}"></script>
+<!-- Active js -->
+<script src="{{asset('blog_layouts/js/active.js')}}"></script>
 </body>
+
+</html>
