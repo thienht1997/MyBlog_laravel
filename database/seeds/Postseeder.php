@@ -13,12 +13,13 @@ class Postseeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        $limit = 10;
+        $limit = 50;
 
         for ($i = 0; $i < $limit; $i++) {
             DB::table('post')->insert([
                 'name' => $faker->title,
                 'content' => $faker->paragraph,
+                'category_id' => rand(1,5),
             ]);
         }
     }

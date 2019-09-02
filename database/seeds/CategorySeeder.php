@@ -1,7 +1,5 @@
 <?php
-
 use Illuminate\Database\Seeder;
-
 class CategorySeeder extends Seeder
 {
     /**
@@ -12,9 +10,7 @@ class CategorySeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-
         $limit = 5;
-
         for ($i = 0; $i < $limit; $i++) {
             DB::table('category')->insert([
                 'name' => $faker->title,
