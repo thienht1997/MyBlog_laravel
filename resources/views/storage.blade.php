@@ -65,7 +65,7 @@ Link :3
                                         <tr>
                                             <th scope="row">{{$link->id}}</th>
                                             <td>{{$link->title}}</td>
-                                            <td><a href="{{$link->link}}">{{$link->link}}</a></td>
+                                            <td><a href="{{$link->link}}" target="_blank">{{$link->link}}</a></td>
                                             <td>{{$link->created_at}}</td>
                                         </tr>
                                         @endforeach
