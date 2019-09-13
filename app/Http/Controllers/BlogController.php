@@ -47,4 +47,9 @@ class BlogController extends Controller
         return redirect()->route('link')
         ->with('success','Link created successfully.');
     }
+    
+     public function show_effect()
+    {
+       return view('js_nice_effect');
+    }
 }
