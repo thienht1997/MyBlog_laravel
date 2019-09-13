@@ -31,7 +31,7 @@
             </li>
             <li class="nav-item">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">About</a>
+                <a class="nav-link js-scroll-trigger" href="{{route('nice_effect')}}">Js nice effect!</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="{{route('index')}}">Experience</a>
