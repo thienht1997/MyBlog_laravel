@@ -38,7 +38,9 @@
                     <div class="single-blog-area clearfix mb-100">
                         <!-- Blog Content -->
                         <div class="single-blog-content">
+                            @can('manage')
                             <button id="create_link" class='btn btn-success float-right' value="Show form"> Show form
+                            @endcan    
                             </button>
                             <div class="line"></div>
                             <a href="#" class="post-tag">ToiLaThien</a>
