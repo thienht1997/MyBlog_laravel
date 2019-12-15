@@ -24,26 +24,45 @@
                 <a target="_blank" class="nav-link js-scroll-trigger" rel="noopener noreferrer" href="https://github.com/thienht1997">Github</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('link')}}">Link :3</a>
+                <a class="nav-link js-scroll-trigger" href="{{route('link')}}">Storage</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">Skills</a>
+                <a class="nav-link js-scroll-trigger" href="{{route('analysis')}}">Analysis</a>
             </li>
             <li class="nav-item">
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="{{route('nice_effect')}}">Js nice effect!</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">Experience</a>
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">Education</a>
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">Skills</a>
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">Interests</a>
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{route('index')}}">...</a>
             </li>
 
         </ul>
