@@ -10,6 +10,26 @@
         @endsection
     </head>
     <body>
+    <div>
+        <script>
+            $(document).ready(function () {
+                $("#create_form").hide();
+                let isShow = false;
+                $("#create_link").click(function () {
+                    if (isShow == false) {
+                        isShow = true;
+                        $("#create_form").show();
+                        $("#create_link").text('Hide Form');
+                    } else if (isShow == true) {
+                        $("#create_form").hide();
+                        isShow = false;
+                        $("#create_link").text('Show Form');
+                    }
+                });
+            });
+        </script>
+
+    </div>
     <div class="blog-wrapper section-padding-100 clearfix">
         <div class="container">
             <div class="row align-items-end">
@@ -18,11 +38,27 @@
                     <div class="single-blog-area clearfix mb-100">
                         <!-- Blog Content -->
                         <div class="single-blog-content">
+                            <button id="create_link" class='btn btn-success float-right' value="Show form"> Show form
+                            </button>
                             <div class="line"></div>
-                            <a href="#" class="post-tag">blog tào lao</a>
-                            <h4><a href="#" class="post-headline">Hihihihihi</a></h4>
-                            <p>Blog đang trong quá trình xây dựng, chủ yếu do mình lười nên chắc còn lâu mới
-                                xog..BlablablablablablablablaBlablablablablablablablaBlablablablablablabla</p>
+                            <a href="#" class="post-tag">ToiLaThien</a>
+                            <div id="create_form">
+                                <form action="{{route('create_post')}}" method="post">
+                                    @csrf
+                                    <label for="">Add something new!</label> <br>
+                                    <h3>Title:</h3>
+                                    <input type="text" name="name" style="width: 100%" required>
+                                    <br>
+                                    <h3>Content:</h3>
+                                    <textarea maxlength="1000" rows="7" name="content" style="width: 100%" required></textarea>
+                                    <br><br>
+                                    <input hidden type="text" name="category_id" value="1" style="width: 100%">
+                                    <input type="submit" value="Add">
+                                </form>
+                                <br>
+                            </div>
+                            <h4><a href="#" class="post-headline"></a></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -38,7 +74,7 @@
                         let pageNum = 1;
                         $(document).ready(function () {
                             $(document).on('click', '#readmore', function () {
-                                pageNum +=1;
+                                pageNum += 1;
                                 $.ajax({
                                     url: '{{ route('ajaxposts', 1) }}',
                                     method: 'get',
@@ -46,26 +82,25 @@
                                     success: function (data) {
                                         data.forEach(function (value) {
                                             let postList = "<div class='row align-items-center'>" +
-                                                "<div class='col-12 col-md-6'>"+
-                                                "<div class='single-blog-thumbnail'>"+
-                                                "<img src='img/blog-img/4.jpg' alt=''>"+
-                                                "<div class='post-date'>"+
-                                                "<a href='#'>12 <span>march</span></a>"+
-                                             "</div>"+
-                                            "</div>"+
-                                            "</div>"+
-                                            "<div class='col-12 col-md-6'>"+
-                                                "<div class='single-blog-content'>"+
-                                                "<div class='line'></div>"+
-                                                "<a href='#' class='post-tag'>blog tào lao</a>"+
-                                            "<h4><a href='#' class='post-headline'>"+ value.name+ "</a></h4>"+
-                                            "<p>" + value.content + "</p>"+
-                                            "<div class='post-meta'>"+
-
-                                                "</div>"+
-                                                "</div>"+
-                                                "</div>"+
-                                                "</div>"+ "<br>";
+                                                "<div class='col-12 col-md-6'>" +
+                                                "<div class='single-blog-thumbnail'>" +
+                                                "<img src='img/blog-img/4.jpg' alt=''>" +
+                                                "<div class='post-date'>" +
+                                                "<a href='#'>12 <span>march</span></a>" +
+                                                "</div>" +
+                                                "</div>" +
+                                                "</div>" +
+                                                "<div class='col-12 col-md-6'>" +
+                                                "<div class='single-blog-content'>" +
+                                                "<div class='line'></div>" +
+                                                "<a href='#' class='post-tag'>ToiLaThien</a>" +
+                                                "<h4><a href='#' class='post-headline'>" + value.name + "</a></h4>" +
+                                                "<p>" + value.content + "</p>" +
+                                                "<div class='post-meta'>" +
+                                                "</div>" +
+                                                "</div>" +
+                                                "</div>" +
+                                                "</div>" + "<br>";
 
                                             $("#content").append(postList);
                                         });
@@ -79,9 +114,8 @@
 
                     </script>
                     @foreach ($posts as $post)
-
-
-                        <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1000ms">
+                        <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s"
+                             data-wow-duration="1000ms">
                             <div class="row align-items-center">
                                 <div class="col-12 col-md-6">
                                     <div class="single-blog-thumbnail">
@@ -95,7 +129,7 @@
                                     <!-- Blog Content -->
                                     <div class="single-blog-content">
                                         <div class="line"></div>
-                                        <a href="#" class="post-tag">blog tào lao</a>
+                                        <a href="#" class="post-tag">ToiLaThien</a>
                                         <h4><a href="#" class="post-headline">{{$post->name}}</a></h4>
                                         <p>{{$post->content}}.</p>
                                         <div class="post-meta">
@@ -105,12 +139,10 @@
                                 </div>
                             </div>
                         </div>
-
                 @endforeach
-                    <!-- Single Blog Area  -->
+                <!-- Single Blog Area  -->
                     <div id="content" class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s"
                          data-wow-duration="1000ms">
-
                     </div>
 
                     <!-- Load More -->

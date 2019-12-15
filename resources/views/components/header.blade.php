@@ -1,4 +1,3 @@
-
 <header class="header-area">
 
     <!-- Top Header Area -->
@@ -9,17 +8,6 @@
                 <div class="col-12 col-sm-8">
                     <div class="breaking-news-area">
                         <h2>Hello Guy I'm Thien</h2>
-{{--                        <div id="breakingNewsTicker" class="ticker">--}}
-{{--                            <ul>--}}
-{{--                                <li><a href="#">I'm a Developer!</a></li>--}}
-{{--                                <li><a href="#">Bloger!</a></li>--}}
-{{--                                <li><a href="#">Dreamer!</a></li>--}}
-{{--                                <li><a href="#">Thinker!</a></li>--}}
-{{--                                <li><a href="#">And doer!</a></li>--}}
-{{--                            </ul>--}}
-
-{{--                        </div>--}}
-
                     </div>
 
                 </div>
@@ -34,6 +22,29 @@
                         <a href="{{route('index')}}" data-toggle="tooltip" data-placement="bottom" title="My phone"><i
                                 class="fa fa-phone" aria-hidden="true"></i> 0356630128 </a>
                     </div>
+                </div>
+                <div class="">
+                    @guest
+                    @else
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" style="z-index: 999" href="#"
+                           role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown"
+                             style="z-index: 999">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    @endguest
                 </div>
             </div>
         </div>

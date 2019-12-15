@@ -10,7 +10,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-       $posts = Post::where('id','<',5)->get();
+       $posts = Post::orderBy('id', 'desc')->take(5)->get();
        return view('index', compact('posts'));
     }
 
@@ -47,7 +47,7 @@ class BlogController extends Controller
         return redirect()->route('link')
         ->with('success','Link created successfully.');
     }
-    
+
      public function show_effect()
     {
        return view('js_nice_effect');

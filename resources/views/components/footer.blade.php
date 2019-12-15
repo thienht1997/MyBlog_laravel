@@ -1,9 +1,8 @@
-
 <footer class="footer-area text-center">
     <div class="container">
         <div class="row">
             <div class="col-12">
-               
+
                 <!-- Footer Nav Area -->
                 <div class="classy-nav-container breakpoint-off">
                     <!-- Classy Menu -->
@@ -22,11 +21,11 @@
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
 
-              
+
                         </div>
                     </nav>
                 </div>
-                
+
                 {{-- <!-- Footer Social Area -->
                 <div class="footer-social-area mt-30">
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
@@ -40,6 +39,7 @@
         </div>
     </div>
 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+    All rights reserved</a>
 </footer>
