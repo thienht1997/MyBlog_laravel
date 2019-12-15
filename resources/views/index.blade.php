@@ -136,7 +136,7 @@
                                         <div class="line"></div>
                                         <a href="#" class="post-tag">ToiLaThien</a>
                                         <h4><a href="{{route('show_post', $post->id)}}" class="post-headline">{{$post->name}}</a></h4>
-                                        <p>{{$post->content}}.</p>
+                                        <p>{{Str::limit($post->content, 100)}}.</p>
                                         <div class="post-meta">
 
                                         </div>
