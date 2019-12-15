@@ -40,7 +40,7 @@
                         <div class="single-blog-content">
                             @can('manage')
                             <button id="create_link" class='btn btn-success float-right' value="Show form"> Show form
-                            @endcan    
+                            @endcan
                             </button>
                             <div class="line"></div>
                             <a href="#" class="post-tag">ToiLaThien</a>
@@ -132,7 +132,7 @@
                                     <div class="single-blog-content">
                                         <div class="line"></div>
                                         <a href="#" class="post-tag">ToiLaThien</a>
-                                        <h4><a href="#" class="post-headline">{{$post->name}}</a></h4>
+                                        <h4><a href="{{route('show_post', $post->id)}}" class="post-headline">{{$post->name}}</a></h4>
                                         <p>{{$post->content}}.</p>
                                         <div class="post-meta">
 
