@@ -52,7 +52,7 @@
                                     <input type="text" name="name" style="width: 100%" required>
                                     <br>
                                     <h3>Content:</h3>
-                                    <textarea maxlength="1000" rows="7" name="content" style="width: 100%" required></textarea>
+                                    <textarea maxlength="10000" rows="7" name="content" style="width: 100%" required></textarea>
                                     <br><br>
                                     <input hidden type="text" name="category_id" value="1" style="width: 100%">
                                     <input type="submit" value="Add">
@@ -116,7 +116,10 @@
 
                     </script>
                     @foreach ($posts as $post)
-                        <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s"
+                        @can('manage')
+                            <a href="{{route('post.delete', $post->id)}}"><button type="button" class="btn btn-danger" onclick="return confirm('Are you sure to delete this?')">Delete</button></a>
+                        @endcan
+                        <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp pt-2" data-wow-delay="0.3s"
                              data-wow-duration="1000ms">
                             <div class="row align-items-center">
                                 <div class="col-12 col-md-6">

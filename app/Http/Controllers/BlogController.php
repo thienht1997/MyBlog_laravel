@@ -10,7 +10,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-       $posts = Post::orderBy('id', 'desc')->take(5)->get();
+       $posts = Post::orderBy('id', 'desc')->take(10)->get();
        return view('index', compact('posts'));
     }
 

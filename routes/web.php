@@ -21,6 +21,7 @@ Route::get('{id}/post', 'PostController@show')->name('show_post');
 
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('{id}/post', 'PostController@destroy')->name('post.delete');
     Route::get('/analysis', 'AnalysisController@index')->name('analysis');
     Route::post('/post', 'PostController@createPost')->name('create_post');
 
