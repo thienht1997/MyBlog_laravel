@@ -66,6 +66,7 @@
                                                 <td>{{$link->title}}</td>
                                                 <td><a href="{{$link->link}}" target="_blank">{{$link->link}}</a></td>
                                                 <td>{{$link->created_at}}</td>
+                                                <td><a href="{{route('delete_link', $link->id)}}" class="btn-danger"></a></td>
                                             </tr>
                                         @endforeach
                                         </tbody>

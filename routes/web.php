@@ -17,6 +17,7 @@ Route::get('{page}/ajaxposts', 'BlogController@ajaxPostData')->name('ajaxposts')
 Route::get('/nice_effect', 'BlogController@show_effect')->name('nice_effect');
 Route::get('/link', 'BlogController@storage')->name('link');
 Route::post('/link', 'BlogController@create_link')->name('create_link');
+Route::get('{id}/link', 'BlogController@delete_link')->name('delete_link');
 Route::get('{id}/post', 'PostController@show')->name('show_post');
 
 
@@ -24,7 +25,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('{id}/post/delete', 'PostController@destroy')->name('post.delete');
     Route::get('/analysis', 'AnalysisController@index')->name('analysis');
     Route::post('/post', 'PostController@createPost')->name('create_post');
-
 });
 
 Auth::routes();
