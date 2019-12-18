@@ -26,7 +26,7 @@
         <!-- Instagram Slides -->
         <div class="instagram-slides owl-carousel">
             <h4 class="text-center">{{$post->name}}</h4><br>
-            <p class="p-5">{{$post->content}}</p>
+            <p class="p-5">{!!nl2br($post->content) !!}</p>
         </div>
     </div>
     <!-- ##### Instagram Feed Area End ##### -->
