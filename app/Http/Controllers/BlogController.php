@@ -48,11 +48,25 @@ class BlogController extends Controller
             ->with('success', 'Link created successfully.');
     }
 
+    public function edit_link($id)
+    {
+        $link = Link::find($id);
+
+        return view('storage', compact('link'));
+    }
+
+    public function update_link(Request $request, Link $link)
+    {
+        $link->update($request->all());
+        return redirect()->route('link')
+            ->with('success', 'Link update successfully.');
+    }
+
     public function delete_link($id)
     {
         $link = Link::find($id);
         $link->delete();
-        return redirect()->route('link');
+        return redirect()->route('link')->with('success', 'Link delete successfully.');;
     }
 
     public function show_effect()
