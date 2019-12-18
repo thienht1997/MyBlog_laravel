@@ -6,7 +6,6 @@
 
     <!-- ##### Single Blog Area Start ##### -->
     <div class="single-blog-wrapper section-padding-0-100">
-
         <!-- Single Blog Area  -->
         <div class="single-blog-area blog-style-2 mb-50">
             <div class="single-blog-thumbnail">
@@ -15,6 +14,13 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
+                                @if(Session::has('success'))
+                                    <div id='success' class="alert alert-{{Arr::random(['success', 'danger', 'primary', 'info', 'warning'])}} pt-5 text-center">
+                                        <ul>
+                                            {{Session::get('success')}}
+                                        </ul>
+                                    </div>
+                                @endif
                                 <div class="post-date">
                                     <script>
                                         $(document).ready(function () {
@@ -32,10 +38,31 @@
                                                 }
                                             });
                                         });
+                                        setTimeout(function () {
+                                            $('#success').hide()
+                                        }, 2000);
+
                                     </script>
                                     <button id="create_link" class='btn btn-success' value="Show form"> Show form
                                     </button>
                                     <h1></h1>
+                                    @if(isset($link))
+                                        <div id="edit_form">
+                                        <form action="{{route('update_link', $link)}}" method="post">
+                                            @csrf
+                                            <label for="">Edit link!</label> <br>
+                                            <h3>Title:</h3>
+                                            <input type="text" name="title" value="{{$link->title}}">
+                                            <br>
+                                            <h3>Link:</h3>
+                                            <input type="text" name="link" value="{{$link->link}}">
+                                            <br><br>
+                                            <input type="submit" value="Add">
+                                            <button id="back">Back</button>
+                                        </form>
+                                        <br>
+                                    </div>
+                                    @endif
                                     <div id="create_form">
                                         <form action="{{route('create_link')}}" method="post">
                                             @csrf
@@ -50,13 +77,19 @@
                                         </form>
                                         <br>
                                     </div>
-                                    <table class="table table-dark">
+                                    @if(isset($links))
+                                    <table class="table table-dark" id="table">
                                         <thead>
                                         <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Title</th>
                                             <th scope="col">Link</th>
                                             <th scope="col">Create At</th>
+                                            @can('manage')
+                                                <th scope="col">-</th>
+                                                <th scope="col">-</th>
+                                            @endcan
+
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -66,10 +99,25 @@
                                                 <td>{{$link->title}}</td>
                                                 <td><a href="{{$link->link}}" target="_blank">{{$link->link}}</a></td>
                                                 <td>{{$link->created_at}}</td>
+                                                @can('manage')
+                                                    <td>
+                                                        <a href="{{route('edit_link', $link->id)}}">
+                                                            <button class="btn btn-primary edit" id="btn_edit">
+                                                                Edit
+                                                            </button>
+                                                        </a></td>
+                                                    <td><a href="{{route('delete_link', $link->id)}}">
+                                                            <button class="btn btn-danger"
+                                                                    onclick="return confirm('Are you sure to delete this?')">
+                                                                Delete
+                                                            </button>
+                                                        </a></td>
+                                                @endcan
                                             </tr>
                                         @endforeach
                                         </tbody>
                                     </table>
+                                        @endif
                                 </div>
                             </div>
                         </div>
