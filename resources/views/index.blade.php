@@ -28,7 +28,7 @@
                                 <div class="line"></div>
                                 <a href="#" class="post-tag">ToiLaThien</a>
                                 @if(session()->has('key'))
-                                    {{Auth::check() ? Session::flush() : ''}}
+                                    {{Auth::check() ? Session::forget('key') : ''}}
                                 <script>
                                     $(document).ready(function () {
                                             $("#modalLoginForm").modal('show');
