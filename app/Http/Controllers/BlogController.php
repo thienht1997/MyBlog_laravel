@@ -73,4 +73,17 @@ class BlogController extends Controller
     {
         return view('js_nice_effect');
     }
+
+    public function sendMail()
+    {
+        $details = [
+            'title' => 'Về chuyện 2 con thằn lằn con',
+            'body' => 'Hai con thằn lằn con đùa nhau cắn nhau đứt kiu',
+            'total_link' => count(Link::all()),
+            'total_post' => count(Post::all()),
+        ];
+        \Mail::to('thienht1997tt@gmail.com')->send(new \App\Mail\MyTestMail($details));
+       
+        return redirect()->route('link')->with('success', 'Mail send successfully.');;
+    }
 }

@@ -12,6 +12,14 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <script>
+        $(document).ready(function () {
+            $("#analysis").click(function () {
+                $("#modalLoginForm").modal('show');
+                $("#modalLoginForm").appendTo("body");
+            });
+        });
+    </script>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -27,7 +35,8 @@
                 <a class="nav-link js-scroll-trigger" href="{{route('link')}}">Storage</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="{{route('analysis')}}">Analysis</a>
+                <a id="analysis" class="nav-link js-scroll-trigger" href="{{ Auth::check() ? route('analysis') : route('index') }}">Analysis</a>
+                {{ Auth::check() ? '' : Session::put('key', 'true')}}
             </li>
             <li class="nav-item">
             <li class="nav-item">

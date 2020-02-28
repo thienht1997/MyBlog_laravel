@@ -33,3 +33,12 @@ Route::middleware(['auth'])->group(function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Vuejs
+Route::get('manage-vue', 'VueItemController@manageVue');
+Route::resource('vueitems','VueItemController');
+
+//Test Email
+
+Route::get('send-mail', 'BlogController@sendMail')->name('send_mail');;
+

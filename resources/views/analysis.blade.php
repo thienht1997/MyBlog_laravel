@@ -4,6 +4,14 @@
 @endsection
 @section('content')
     @can('manage')
+       
+        <a href="{{route("send_mail")}}" class="btn btn-primary"><button id="send_mail">Send Mail</button></a>
+        <script>
+            $( document ).ready(function() {
+                var day = new Date();
+                day.getDay() == 0 ? $('#send_mail').trigger('click') : '';
+            });
+        </script>
         <div class="coming-soon-area bg-img background-overlay" style="background-image: url(img/bg-img/b9.jpg);">
             <!-- ##### Coming Soon Area Start ##### -->
             <div class="coming-soon-timer text-center">
@@ -27,6 +35,12 @@
             <!-- ##### Coming Soon Area End ##### -->
 
             <!-- ##### Contact Area Start ##### -->
+            
+            <div class="text-center">
+                <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
+                    Modal Login Form</a>
+            </div>
+
             <div class="contact-area section-padding-100">
                 <div class="container">
                     <div class="row justify-content-center">

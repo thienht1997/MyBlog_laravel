@@ -11,6 +11,7 @@
                     </div>
 
                 </div>
+                @include('components.navigave')
                 <!-- Top Social Area -->
                 <div class="col-8 col-sm-4">
                     <div class="top-social-area">
