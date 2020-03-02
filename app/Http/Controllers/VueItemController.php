@@ -26,7 +26,6 @@ class VueItemController extends Controller
     public function index(Request $request)
     {
         $items = Item::all();
-        dd($items);
         return response()->json($items);
     }
 

@@ -54,12 +54,21 @@ new Vue({
   		this.getVueItems(this.pagination.current_page);
   },
   
-
   methods : {
         getVueItems: function(page){
           this.$http.get('/vueitems').then((response) => {
-            this.$set('items', response.data.data.data);
-            this.$set('pagination', response.data.pagination);
+            this.data = JSON.parse(response.body);
+            $.each(this.data, function( index, value ) {
+              console.log(value);
+              $('#item_vue').append(`<tr>
+              <td> ${value.title}</td>
+              <td>  ${value.description} </td>
+              <td>	
+                <button class="btn btn-primary" style="background-color: green; border-radius: 25%; color:pink">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+              </td></tr>`);
+            });            
+          
           });
         },
 

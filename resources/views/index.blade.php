@@ -36,6 +36,14 @@
                                     });
                                 </script>
                                 @endif
+                                <script>
+                                    $(document).ready(function () {
+                                            $("#create_link1").click(function(){
+                                                $("#myModal").modal('show');
+                                                $("#myModal").appendTo("body");
+                                            });
+                                    });
+                                </script>
                                 @include('components.modal_login')
                                 {{-- Modal --}}
                                 <div id="myModal" class="modal fade centered" role="dialog" style='position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);'>

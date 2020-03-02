@@ -3,21 +3,6 @@
 <head>
 	<title>Laravel Vue JS Item CRUD</title>
 	<meta id="token" name="token" value="{{ csrf_token() }}">
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-
-
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-        <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
-
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/vue.resource/0.9.3/vue-resource.min.js"></script>
-
-
-	<script type="text/javascript" src="{{asset('js/item.js')}}"></script>
-
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
 </head>
 <body>
@@ -29,25 +14,35 @@
 		<div class="row">
 		    <div class="col-lg-12 margin-tb">
 		        <div class="pull-left">
-					<h2>Laravel Vue JS</h2>
+		            <h2>Laravel VueJS </h2>
 		        </div>
 		        <div class="pull-right">
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#create-item">
 				  Create Item
 				</button>
-				</div>
+		        </div>
 		    </div>
 		</div>
 
+
 		<!-- Item Listing -->
-		<table class="table table-bordered">
+		<div>
+			<table class="table table-bordered" id="item_vue">
+				<tr>
+					<th>Title</th>
+					<th>Description</th>
+					<th width="200px">Action</th>
+				</tr>
+			
+			</table>
+		</div>
+		{{-- <table class="table table-bordered">
 			<tr>
 				<th>Title</th>
 				<th>Description</th>
 				<th width="200px">Action</th>
 			</tr>
 			<tr v-for="item in items">
-				@{{console.log(item.title)}}
 				<td>@{{ item.title }}</td>
 				<td>@{{ item.description }}</td>
 				<td>	
@@ -55,28 +50,10 @@
 			      <button class="btn btn-danger" @click.prevent="deleteItem(item)">Delete</button>
 				</td>
 			</tr>
-		</table>
+		</table> --}}
 
-		<h4 id="text" style="display:none">Make everything true again</h4>
-		<button id="show_text" class="btn btn-dark">Show text</button>
-		<script>
-	
-			$(document).ready(function(){
-				let toggle = true;
-				$("#show_text").click(function(){
-					if(toggle){
-						$("#text").css("display", "inline");
-						$("#show_text").text('Hide Text');
-						toggle = false;
-					}
-					else{
-						$("#text").css("display", "none");
-						$("#show_text").text('Show Text');
-						toggle = true;
-					}
-				});
-			});
-		</script>
+
+		<!-- Pagination -->
 		<nav>
 	        <ul class="pagination">
 	            <li v-if="pagination.current_page > 1">
@@ -182,7 +159,25 @@
 		    </div>
 		  </div>
 		</div>
+
+
 	</div>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/vue.resource/0.9.3/vue-resource.min.js"></script>
+
+
+	<script type="text/javascript" src="/js/item.js"></script>
+
 
 </body>
 </html>

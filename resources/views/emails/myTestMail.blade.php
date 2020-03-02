@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ItsolutionStuff.com</title>
+    <title>Analysis @php echo date("Y/m/d") @endphp</title>
 </head>
 <body>
     <h1>{{ $details['title'] }}</h1>
