@@ -41,7 +41,21 @@
                                         setTimeout(function () {
                                             $('#success').hide()
                                         }, 2000);
+                                        
+                                        // ids = JSON.parse($(".link-ids").val());
+                                        var changeImportantLevel = (rowId) => {
+                                            important_level = $("#link-important" + rowId.slice(6)).val();
+                                            important_level++;
+                                            important_level%3 == 0 ?  $('#' + rowId).css('color', 'red') : (important_level%3 == 1 ?  $('#' + rowId).css('color', 'green') : $('#' + rowId).css('color', 'yellow'));
+                                            return $.ajax({
+                                                type: 'GET',
+                                                url: '/api/ajaxChangeImportantLevel/' + rowId.slice(6) + '/' + important_level,
+                                                dataType: 'json',
+                                                success: function(response){
 
+                                                }
+                                            });
+                                        };
                                     </script>
                                     <button id="create_link" class='btn btn-success' value="Show form"> Show form
                                     </button>
@@ -93,10 +107,13 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($links as $key=>$link)
+                                        <input class="link-ids" type="hidden" value="{{json_encode($link_ids)}}">;
+
+                                        @foreach($links as $key=>$link)                                            
+                                            <input id="{{'link-important' . $link->id}}" type="hidden" value="{{$link->important_level}}">;
                                             <tr>
                                                 <th scope="row">{{++$key}}</th>
-                                                <td>{{$link->title}}</td>
+                                            <td  id="{{'title_' . $link->id}}" onclick="changeImportantLevel(this.id, {{$link->important_level}})" style={{$link->important_level % 3 == 1 ? 'color:green' : ($link->important_level % 3 == 2 ? 'color:yellow' : 'color:red')}}>{{$link->title}}</td>
                                                 <td><a href="{{$link->link}}" target="_blank">{{$link->link}}</a></td>
                                                 <td>{{$link->created_at}}</td>
                                                 @can('manage')

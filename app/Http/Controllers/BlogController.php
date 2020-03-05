@@ -33,7 +33,8 @@ class BlogController extends Controller
     public function storage()
     {
         $links = Link::all();
-        return view('storage', compact('links'));
+        $link_ids = array_column($links->toArray(), 'id');
+        return view('storage', compact('links', 'link_ids'));
     }
 
     public function create_link(Request $request)
@@ -74,6 +75,11 @@ class BlogController extends Controller
         return view('js_nice_effect');
     }
 
+    public function show_effect_1()
+    {
+        return view('js_nice_effect_1');
+    }
+
     public function sendMail()
     {
         $details = [
@@ -85,5 +91,10 @@ class BlogController extends Controller
         \Mail::to('thienht1997tt@gmail.com')->send(new \App\Mail\MyTestMail($details));
        
         return redirect()->route('link')->with('success', 'Mail send successfully.');;
+    }
+
+    public function ajaxChangeImportantLevel($id, $important_level){
+        $link = Link::findOrFail($id);
+        $link->update(array('important_level' => $important_level));
     }
 }

@@ -51,11 +51,14 @@
 				</td>
 			</tr>
 		</table> --}}
-
+		
 
 		<!-- Pagination -->
+	
 		<nav>
 	        <ul class="pagination">
+				<button class="btn btn-light toggle"> * </button>
+				{{-- <h1> Make everything true again </h1> --}}
 	            <li v-if="pagination.current_page > 1">
 	                <a href="#" aria-label="Previous"
 	                   @click.prevent="changePage(pagination.current_page - 1)">
@@ -159,8 +162,6 @@
 		    </div>
 		  </div>
 		</div>
-
-
 	</div>
 
 
@@ -178,6 +179,23 @@
 
 	<script type="text/javascript" src="/js/item.js"></script>
 
-
+	<script>
+		let i = 0;
+		let width = 15;
+		for (j = 0; j<= 1000000; j++){
+			setTimeout(function(){
+				i+=1;
+				width += 2;
+				// console.log( i + ' ' + width);
+				items = ['red', 'blue', 'pink', 'black', 'green', 'yellow', 'red'];
+				$('.toggle').text(i);
+				$('.toggle').css('width', width + 'px');
+				$('.toggle').css('color', items[Math.floor(Math.random() * items.length)]);
+				if( i === 100){
+					alert('Done!!!!');
+				}
+			}, j*500);
+		}
+	</script>
 </body>
 </html>

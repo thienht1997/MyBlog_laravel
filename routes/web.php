@@ -15,6 +15,7 @@ Route::get('/post', 'BlogController@show_post')->name('show_post');
 Route::get('/aboutme', 'BlogController@show_info')->name('about_me');
 Route::get('{page}/ajaxposts', 'BlogController@ajaxPostData')->name('ajaxposts');
 Route::get('/nice_effect', 'BlogController@show_effect')->name('nice_effect');
+Route::get('/nice_effect_1', 'BlogController@show_effect_1')->name('nice_effect_1');
 Route::get('/link', 'BlogController@storage')->name('link');
 Route::post('/link', 'BlogController@create_link')->name('create_link');
 Route::get('{id}/post', 'PostController@show')->name('show_post');
