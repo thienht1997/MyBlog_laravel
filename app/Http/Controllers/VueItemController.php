@@ -26,6 +26,12 @@ class VueItemController extends Controller
     public function index(Request $request)
     {
         $items = Item::all();
+        if($items){
+            echo('2 con thằn lằn con');
+        }
+        else if(!$items){
+            echo('3 con thằn lằn con');
+        }
         return response()->json($items);
     }
 
