@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <base href="{{asset('blog_layouts')}}/">
     <title>@yield('title')</title>
 <!-- Bootstrap core CSS -->
@@ -31,16 +31,18 @@
     <!-- Custom scripts for this template -->
     <script src="navigave_layouts/js/resume.min.js"></script>
     <!-- Custom styles for this template -->
-    @yield('css')</head>
+    @yield('css')
+</head>
 
 <body id="page-top">
+
 @include('components.header')
 
 @include('components.navigave')
 <div class="container-fluid p-0">
-
-    @yield('content')
-
+    <div id="app">
+        @yield('content')
+    </div>
 </div>
 
 
@@ -54,6 +56,9 @@
 {{--<script src="{{asset('blog_layouts/js/plugins.js')}}"></script>--}}
 {{--<!-- Active js -->--}}
 {{--<script src="{{asset('blog_layouts/js/active.js')}}"></script>--}}
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="application/javascript" src="{{asset('js/common.js')}}"></script>
+
 </body>
 
 </html>

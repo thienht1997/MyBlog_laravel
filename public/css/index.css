@@ -1,0 +1,7 @@
+#modalLoginForm {
+    display: flex !important;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+  }
+

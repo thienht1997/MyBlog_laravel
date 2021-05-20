@@ -14,12 +14,12 @@ class BlogController extends Controller
         return view('index', compact('posts'));
     }
 
-    public function show_post()
+    public function showPost()
     {
         return view('single-post');
     }
 
-    public function show_info()
+    public function showInfo()
     {
         return view('about-me');
     }
@@ -37,7 +37,7 @@ class BlogController extends Controller
         return view('storage', compact('links', 'link_ids'));
     }
 
-    public function create_link(Request $request)
+    public function storageLink(Request $request)
     {
         $request->validate([
             'title' => 'required',
@@ -49,33 +49,33 @@ class BlogController extends Controller
             ->with('success', 'Link created successfully.');
     }
 
-    public function edit_link($id)
+    public function editLink($id)
     {
         $link = Link::find($id);
 
         return view('storage', compact('link'));
     }
 
-    public function update_link(Request $request, Link $link)
+    public function updateLink(Request $request, Link $link)
     {
         $link->update($request->all());
         return redirect()->route('link')
             ->with('success', 'Link update successfully.');
     }
 
-    public function delete_link($id)
+    public function destroyLink($id)
     {
         $link = Link::find($id);
         $link->delete();
         return redirect()->route('link')->with('success', 'Link delete successfully.');;
     }
 
-    public function show_effect()
+    public function showEffectOne()
     {
         return view('js_nice_effect');
     }
 
-    public function show_effect_1()
+    public function showEffectTwo()
     {
         return view('js_nice_effect_1');
     }
