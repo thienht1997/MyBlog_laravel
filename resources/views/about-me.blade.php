@@ -34,7 +34,7 @@
                         <!-- Blog Content -->
                         <div class="single-blog-content">
                             <div class="line"></div>
-                            <a href="#" class="post-tag">ToiLaThien</a>
+                            <p class="post-tag">ToiLaThien</p>
                             <p class="mb-3">Uhmm!!! ... I'm Thien.</p>
                         </div>
                     </div>

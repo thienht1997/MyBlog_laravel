@@ -9,7 +9,7 @@
         <script>
             $( document ).ready(function() {
                 var day = new Date();
-                day.getDay() == 0 ? $('#send_mail').trigger('click') : '';
+                day.getDay() == 0 ? $('#send-mail').trigger('click') : '';
             });
         </script>
         <div class="coming-soon-area bg-img background-overlay" style="background-image: url(img/bg-img/b9.jpg);">
